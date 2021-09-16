@@ -31,5 +31,5 @@ pip3 install pefile
 ![Sample Execution](sample_execution.png)
 
 ### Source(s):
-- sektor7
-- pefile github
+- sektor7 intermediate malware dev course
+- pefile github (https://github.com/erocarrera/pefile)
