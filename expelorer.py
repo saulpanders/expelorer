@@ -45,6 +45,7 @@ def main():
 
 		# checking if it is a PE file (exe or dll) - exe's could be exporting something ;)
 		if os.path.isfile(f) and f.endswith(("dll","exe")): 
+			
 			pe = pefile.PE(f, fast_load=True)
 
 			#pulls imports and exports (add import logic later?)
