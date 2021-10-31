@@ -31,9 +31,9 @@ def write_pe_exports(filename):
 
 
 def main():
-	parser = argparse.ArgumentParser(description='DIAL device enumeration')
+	parser = argparse.ArgumentParser(description='Portable Executable (PE) Investigation Tool')
 	parser.add_argument('-d', '--directory',help='Directory to enumerate DLLs', default=".")
-	parser.add_argument('-o', '--output',  help='write output to file')
+	parser.add_argument('-o', '--output',  help='Write output to file')
 	parser.add_argument('-v', '--verbose', action= 'store_true',  help='write output to stdout')
 	args = parser.parse_args()
 
