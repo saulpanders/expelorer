@@ -43,8 +43,8 @@ def main():
 	for filename in os.listdir(directory):
 		f = os.path.join(directory, filename)
 
-		# checking if it is a PE file (exe or dll) - exe's could be exporting something ;)
-		if os.path.isfile(f) and f.endswith(("dll","exe")): 
+		# checking if it is a PE file (exe, dll, or sys) - exe's could be exporting something ;)
+		if os.path.isfile(f) and f.endswith(("dll","exe", "sys")): 
 			
 			pe = pefile.PE(f, fast_load=True)
 
